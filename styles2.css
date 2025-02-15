@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    background: #007bff;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 300px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #007bff;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    background: dark gray;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#home {
+    background: url(travels.jpg);
+    color: white;
+    padding: 300px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none ;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
